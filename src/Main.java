@@ -2,19 +2,18 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int pozgs= in.nextInt();
         int[]nums=new int[15];
+        int max;
+        int col;
         for (int i=0; i<nums.length;i++){
             nums[i]= 0;
         }
-        Scanner in = new Scanner(System.in);
-        int col_gs= in.nextInt();
-        for (int i=0;i<col_gs;i++){
+
+        for (int i=0;i<pozgs;i++){
             nums[in.nextInt()-1]+=1;
         }
-
-        int max=0;
-        int col=0;
-
         for (int j =0;j<3;j++){
             max=0;
             col=0;
